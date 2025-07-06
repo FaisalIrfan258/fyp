@@ -32,7 +32,6 @@ brain-tumor-detection/
 │   ├── uploads/
 │   ├── model_files/
 │   └── requirements.txt
-├── shared/                   # Shared types/utilities
 └── README.md
 ```
 
@@ -105,18 +104,6 @@ The backend will be available at http://localhost:8000.
    ```
 
 The frontend will be available at http://localhost:3000.
-
-## Docker Setup
-
-You can also run the entire application using Docker Compose:
-
-1. Make sure Docker and Docker Compose are installed
-2. Run the following command:
-   ```bash
-   docker-compose up
-   ```
-
-This will start the frontend, backend, and PostgreSQL database services.
 
 ## Features
 
