@@ -1,41 +1,73 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.venv/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+.next/
+out/
+.nuxt/
+.cache/
+.output/
 
-# testing
-/coverage
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# next.js
-/.next/
-/out/
+# Database
+*.db
+*.sqlite
+*.sqlite3
 
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# Uploads and model files
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/model_files/*
+!backend/model_files/.gitkeep
 
-# vercel
-.vercel
+# OS specific
+.DS_Store
+Thumbs.db
+.directory
+Desktop.ini
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~ 
